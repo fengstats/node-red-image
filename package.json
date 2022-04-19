@@ -1,0 +1,8 @@
+{
+  "name": "node-red-image",
+  "description": "A Node-RED Project",
+  "version": "1.0.1",
+  "dependencies": {
+    "log4js": "^6.3.0"
+  }
+}

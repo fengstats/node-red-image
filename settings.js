@@ -267,11 +267,11 @@ module.exports = {
     default: {
       module: 'localfilesystem',
       // 设置文件刷新/保存间隔时间
-      flushInterval: 5
+      flushInterval: 5,
     },
     memory: {
-      module: 'memory'
-    }
+      module: 'memory',
+    },
   },
 
   // The following property can be used to order the categories in the editor
@@ -296,7 +296,7 @@ module.exports = {
       // Whether or not to include metric events in the log output
       metrics: false,
       // Whether or not to include audit events in the log output
-      audit: false
+      audit: false,
     },
 
     // 自定义日志模块
@@ -336,10 +336,10 @@ module.exports = {
               backups: 10,
               // alwaysIncludePattern: true,
               // 文件名称合并分隔符: 默认"."
-              fileNameSep: '-'
-            }
+              fileNameSep: '-',
+            },
           },
-          categories: { default: { appenders: ['info'], level: 'all' } }
+          categories: { default: { appenders: ['info'], level: 'all' } },
         })
 
         // 创建日志对象实例
@@ -347,7 +347,7 @@ module.exports = {
         const levelMap = {
           INFO: 40,
           WARN: 30,
-          ERROR: 20
+          ERROR: 20,
         }
         return function (msgObj) {
           // console.log(this)
@@ -379,15 +379,15 @@ module.exports = {
             logger.error('模块处理出错！！！', error)
           }
         }
-      }
-    }
+      },
+    },
   },
 
   // Customising the editor
   editorTheme: {
     projects: {
       // To enable the Projects feature, set this value to true
-      enabled: false
-    }
-  }
+      enabled: false,
+    },
+  },
 }
